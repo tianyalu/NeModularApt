@@ -199,7 +199,7 @@ public class ARouterProcessor extends AbstractProcessor {
         Set<? extends Element> elements = roundEnvironment.getElementsAnnotatedWith(ARouter.class);
         //遍历所有的类节点
         for (Element element : elements) {
-            //类节点只是就是包节点
+            //类节点之上就是包节点
             String packageName = elementUtils.getPackageOf(element).getQualifiedName().toString();
             //获取简单类名
             String className = element.getSimpleName().toString();
